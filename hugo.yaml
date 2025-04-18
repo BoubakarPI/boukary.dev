@@ -1,3 +1,308 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "fr-fr"
+title: "Boukary DIALLO"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Gallery
+      url: /gallery
+      weight: 2
+
+params:
+  title: "Boukary Dev"
+  description: Développeur fullstack & fondateur de UVATIS. Passionné par la tech, l'impact social, et les solutions digitales utiles.
+  favicon: "/images/boukary_dev1.jpg"
+  useBootstrapCDN: false
+  mathjax: false
+  animate: true
+
+  theme:
+    # defaultTheme: "light"
+
+  font:
+    fontSize: 1rem
+    fontWeight: 400
+    lineHeight: 1.5
+    textAlign: left
+
+  navbar:
+    align: ms-auto
+    brandName: "BoukaryDev"
+    disableSearch: true
+    stickyNavBar:
+      enable: true
+      showOnScrollUp: true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  hero:
+    enable: true
+    intro: "Salut, je suis"
+    title: "Boukary DIALLO"
+    subtitle: "Je construis des solutions digitales utiles."
+    content: "Un développeur d'applications Web. J'ai tendance à utiliser les technologies Web modernes pour créer des applications qui ont fière allure, qui sont fantastiques et qui fonctionnent correctement."
+    image: /images/boukary_dev1.jpg
+    bottomImage:
+      enable: true
+    button:
+      enable: true
+      name: "Réserver un call"
+      url: "https://www.uvatis.com"
+      download: true
+      newPage: false
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/BoubakarPI
+        - icon: fab fa-linkedin
+          url: https://www.linkedin.com/in/boubakarpi/
+      customIcons:
+        - icon: /fav.png
+          url: "https://uvatis.com"
+
+  about:
+    enable: true
+    title: "À propos"
+    image: "/images/boukary_dev2.jpg"
+    content: |-
+      Je suis un développeur fullstack spécialisé en JavaScript, Django et Spring Boot. Fondateur de la startup **UVATIS**, j’ai conçu plusieurs plateformes numériques dont *Faso Maths*, *Limmap*, et *Sino Bourse*. Mon objectif est d'utiliser la tech pour résoudre des problèmes concrets.
+
+      Titulaire d’un Baccalauréat série C obtenu au **Lycée Scientifique National de Bobo-Dioulasso**, j’ai poursuivi mes études en **Sciences Informatiques Appliquées**.
+    skills:
+      enable: true
+      title: "Mes stack quotidiennes :"
+      items:
+        - NodeJS
+        - Django
+        - Spring Boot
+        - NuxtJS
+        - NextJS
+        - Flutter
+        - PostgreSQL
+        - Firebase
+        - Docker / Kubernetes
+        - AWS VPC / EC2
+        - R2
+        - MikroTik
+
+  experience:
+    enable: true
+    items:
+      - job: "Full Stack developer"
+        company: "UVATIS LLC"
+        companyUrl: "https://uvatis.com"
+        date: "2023 - 2025"
+        content: |-
+          Développement et gestion de plateformes web et mobiles :
+          - Conception et implémentation de backends robustes avec AdonisJS et Django.
+          - Intégration de bases de données relationnelles (PostgreSQL, SQLite).
+          - Déploiement d’applications sur serveurs VPS avec Docker et Nginx.
+          - Mise en place de tunnels VPN, gestion de routeurs MikroTik via API.
+          - Gestion de projet, rédaction de documentation technique et automatisation de processus CI/CD.
+
+      - job: "Développeur Freelance Full Stack"
+        company: "Freelance"
+        date: "2025 - Aujourd’hui"
+        content: |-
+          Intervention sur divers projets numériques pour des clients variés :
+          - Création de sites e-commerce avec AdonisJS, Vue.js ou Next.js.
+          - Développement d’applications mobiles avec Flutter.
+          - Intégration de solutions de paiement (Ligdicash, CinetPay, Stripe, etc.).
+          - Mise en place de services backend sécurisés avec authentification avancée.
+          - Déploiement cloud (VPS, Cloudflare R2, AWS S3).
+          - Automatisation de déploiements avec GitHub Actions et Docker.
+          - Conseil technique et accompagnement dans la structuration de projets (MVC et Hexagonal).
+
+
+  # projects
+  projects:
+    enable: true
+    items:
+      - title: Fasomaths
+        content: Application mobile éducative pour les élèves de Terminale au Burkina Faso, avec exercices corrigés, épreuves et assistance IA.
+        image: /images/projects/fasomaths.png
+        featured:
+          name: Site officiel
+          link: https://fasomaths.uvatis.com
+        badges:
+          - "AdonisJS"
+          - "Flutter"
+          - "PostgreSQL / Redis"
+          - "NuxtJS"
+          - "Cloudflare R2 / CDN"
+          - "Ligdicash"
+          - "RAG"
+          - "K8s"
+
+      - title: Auto-Pro
+        content: Application e-commerce de pièces détachées automobiles avec moteur de recherche intelligent, gestion offline et interface Flutter responsive.
+        image: /images/projects/autopro.png
+        featured:
+          name: Version web
+          link: https://auto-pro.uvatis.com/
+        badges:
+          - "AdonisJS"
+          - "Flutter"
+          - "PostgreSQL"
+          - "Inertia avec VueJS"
+          - "Agentic + Gemini"
+          - "Cloudflare R2 / CDN"
+        links:
+          - icon: fab fa-google
+            url: https://github.com/uvatis/autopro
+          - icon: fab fa-apple
+            url: https://github.com/uvatis/autopro
+
+      - title: Unet (En cours)
+        content: Plateforme SaaS de gestion de routeurs MikroTik à distance via VPN, avec fonctionnalités de hotspot, tickets, monitoring à l'aide de l'API MikroTik.
+        image: /images/projects/unet.png
+        featured:
+          name: Site vitrine
+          link: https://www.uvatis.net/
+        badges:
+          - "AdonisJS"
+          - "Django"
+          - "NuxtJS"
+          - "PostgreSQL / Redis"
+          - "MikroTik API"
+          - "AWS EC2 / VPC / S3"
+
+      - title: Stockify
+        content: Application web de gestion de stock intuitive avec statistiques, gestion d’inventaire, mouvements et interface responsive.
+        image: /images/projects/stockify.png
+        featured:
+          name: Démo
+          link: https://stockify.boukary.dev/
+        badges:
+          - "Django"
+          - "Bootstrap"
+          - "Charts.js"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/BoubakarPI/stockify.boukary.dev
+
+      - title: Sino Express
+        content: Plateforme d’accompagnement pour les étudiants souhaitant obtenir une bourse d’études en Chine, et sourcing de professionnels voulant importer depuis la Chine.
+        image: /images/projects/sinoexpress.png
+        featured:
+          name: Site officiel
+          link: https://sinoexpress.uvatis.com/
+        badges:
+          - "NextJS"
+          - "TailwindCSS"
+          - "Storybook"
+
+      - title: QBC-PLUS
+        content: Extension web d'une boutique physique de quincaillerie mettant à la disposition des clients tous les articles présents physiquement .
+        image: /images/projects/qbcplus.png
+        featured:
+          name: Version web
+          link: https://www.qbcplus.net
+        badges:
+          - "AdonisJS"
+          - "Inertia + VueJS"
+          - "PostgreSQL + Redis"
+          - "Ligdicash"
+
+      - title: LSNB-BF.org
+        content: Site officiel du Lycée Scientifique National de Bobo-Dioulasso. Développé avec Odoo et modules Python personnalisés.
+        image: /images/projects/lsnb.png
+        featured:
+          name: Site officiel
+          link: https://www.lsnb-bf.org
+        badges:
+          - "Odoo"
+          - "Python"
+          - "PostgreSQL"
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:gurusabarisha@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: true
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>

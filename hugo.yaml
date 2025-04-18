@@ -1,6 +1,6 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://boukary.vercel.app"
 languageCode: "fr-fr"
-title: "Boukary DIALLO"
+title: "Boukary DIALLO | Portfolio"
 theme: hugo-profile
 
 outputs:
@@ -99,7 +99,7 @@ params:
     title: "À propos"
     image: "/images/boukary_dev2.jpg"
     content: |-
-      Je suis un développeur fullstack spécialisé en JavaScript, Django et Spring Boot. Fondateur de la startup **UVATIS**, j’ai conçu plusieurs plateformes numériques dont *Faso Maths*, *Limmap*, et *Sino Bourse*. Mon objectif est d'utiliser la tech pour résoudre des problèmes concrets.
+      Je suis un développeur fullstack spécialisé en JavaScript(AdonisJS, NuxtJS, NextJS) et Spring Boot. Mon objectif est d'utiliser la tech pour résoudre des problèmes concrets.
 
       Titulaire d’un Baccalauréat série C obtenu au **Lycée Scientifique National de Bobo-Dioulasso**, j’ai poursuivi mes études en **Sciences Informatiques Appliquées**.
     skills:
@@ -190,8 +190,11 @@ params:
           - "NuxtJS"
           - "Cloudflare R2 / CDN"
           - "Ligdicash"
-          - "RAG"
-          - "K8s"
+        links:
+          - icon: fab fa-google
+            url: https://fasomaths.uvatis.com/download/android
+          - icon: fab fa-apple
+            url: https://fasomaths.uvatis.com/download/ios
 
       - title: Auto-Pro
         content: Application e-commerce de pièces détachées automobiles avec moteur de recherche intelligent, gestion offline et interface Flutter responsive.
@@ -208,9 +211,9 @@ params:
           - "Cloudflare R2 / CDN"
         links:
           - icon: fab fa-google
-            url: https://github.com/uvatis/autopro
+            url: https://play.google.com/store/apps/details?id=com.uvatis.auto
           - icon: fab fa-apple
-            url: https://github.com/uvatis/autopro
+            url: https://apps.apple.com/us/app/auto-pro/id6744563969
 
       - title: Unet (En cours)
         content: Plateforme SaaS de gestion de routeurs MikroTik à distance via VPN, avec fonctionnalités de hotspot, tickets, monitoring à l'aide de l'API MikroTik.
@@ -231,7 +234,7 @@ params:
         image: /images/projects/stockify.png
         featured:
           name: Démo
-          link: https://stockify.boukary.dev/
+          link: https://github.com/BoubakarPI/stockify.boukary.dev
         badges:
           - "Django"
           - "Bootstrap"

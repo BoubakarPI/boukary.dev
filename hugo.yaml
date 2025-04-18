@@ -45,7 +45,7 @@ params:
   animate: true
 
   theme:
-    # defaultTheme: "light"
+    defaultTheme: "light"
 
   font:
     fontSize: 1rem

@@ -45,7 +45,7 @@ params:
   animate: true
 
   theme:
-    defaultTheme: "dark"
+    # defaultTheme: "light"
 
   font:
     fontSize: 1rem
@@ -99,19 +99,19 @@ params:
     title: "À propos"
     image: "/images/boukary_dev2.jpg"
     content: |-
-      Je suis un développeur fullstack spécialisé en JavaScript(AdonisJS, NuxtJS, NextJS) et Spring Boot. Mon objectif est d'utiliser la tech pour résoudre des problèmes concrets.
+      Je suis un développeur fullstack spécialisé en NodeJS(AdonisJS, NuxtJS, NextJS) et Spring Boot.
 
-      Titulaire d’un Baccalauréat série C obtenu au **Lycée Scientifique National de Bobo-Dioulasso**, j’ai poursuivi mes études en **Sciences Informatiques Appliquées**.
+      Titulaire d’un Baccalauréat série C obtenu au **Lycée Scientifique National de Bobo-Dioulasso**, je poursuis actuellement mes études en **Sciences Informatiques Appliquées**.
     skills:
       enable: true
       title: "Mes stack quotidiennes :"
       items:
         - NodeJS
-        - Django
+        - Flutter
         - Spring Boot
         - NuxtJS
         - NextJS
-        - Flutter
+        - Django
         - PostgreSQL
         - Firebase
         - Docker / Kubernetes
@@ -176,6 +176,7 @@ params:
   # projects
   projects:
     enable: true
+    title: "Quelques projets"
     items:
       - title: Fasomaths
         content: Application mobile éducative pour les élèves de Terminale au Burkina Faso, avec exercices corrigés, épreuves et assistance IA.

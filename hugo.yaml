@@ -38,7 +38,7 @@ markup:
 
 params:
   title: "Boukary Dev"
-  description: Développeur fullstack & fondateur de UVATIS. Passionné par la tech, l'impact social, et les solutions digitales utiles.
+  description: Développeur fullstack. Passionné par la tech, l'impact social, et les solutions digitales utiles.
   favicon: "/boukarydev.png"
   useBootstrapCDN: false
   mathjax: false
